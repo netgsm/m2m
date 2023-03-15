@@ -112,6 +112,37 @@ sağlanır.</li>
 açısından kolaylık sağlar.</li>
 </ul>
 
+### YETKİLENDİRME
+
+<ul>
+<li>M2M API servisi ile işlem yapabilmek için erişim anahtarı almanızı sağlar.</li>
+<li>API servisi ile yapacağınız diğer işlemler için bu yetkilendirmeye ihtiyaç duyulmaktadır.</li>
+<li>Servisten alınan yanıt JSON türündedir.</li>
+</ul>
+<b> Tanımlar </b>
+<table>
+<thead>
+<tr>
+<th>Değişken</th>
+<th>Anlamı</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>username</code></td>
+<td>Hizmet aldığınız abone numarası. <em>(Zorunlu parametre)</em></td>
+</tr>
+<tr>
+<td><code>password</code></td>
+<td>Kullanıcı şifresi. <em>(Zorunlu parametre)</em></td>
+</tr>
+<tr>
+<td><code>appkey</code></td>
+<td>Geliştirici hesabınızdan yayınlanan uygulamanıza ait id bilgisi. <em>(Zorunlu parametre.)</em></td>
+</tr>
+</tbody>
+</table>
+
 ```
         use Netgsm\Account\account;
 	$kredi=new account;
