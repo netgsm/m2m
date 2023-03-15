@@ -57,7 +57,7 @@ M2M API servisleri ile kullanabileceğiniz özellikler:
     - [Yetkilendirme](#yetki̇lendi̇rme)
     - [Hat Listesi](#hat-li̇stesi̇)
     - [Hat Detayı](#hat-detayi)
-    - [Tarih Bazlı Data Kullanımı](#hat-detayi)
+    - [Tarih Bazlı Data Kullanımı](#tari̇h-bazli-data-kullanimi)
     - [IMEI değişim geçmişi](#hat-detayi)
 
 # İletişim & Destek
@@ -562,8 +562,10 @@ Array
 <td>Sayfa numarası.</td>
 </tr>
 </tbody>
-</table>  
+</table>
+
 ##### Örnek  
+
 ```
         use Netgsm\M2m\m2m;
         $islem=new m2m;
