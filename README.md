@@ -57,6 +57,8 @@ M2M API servisleri ile kullanabileceğiniz özellikler:
     - [Yetkilendirme](#yetki̇lendi̇rme)
     - [Hat Listesi](#hat-li̇stesi̇)
     - [Hat Detayı](#hat-detayi)
+    - [Tarih Bazlı Data Kullanımı](#hat-detayi)
+    - [IMEI değişim geçmişi](#hat-detayi)
 
 # İletişim & Destek
 
@@ -517,4 +519,114 @@ Array
 <td>The given data was invalid.The imei field is required when none of iccid / phone number are present.<br>The iccid field is required when none of imei / phone number are present.The phone number field is required when none of imei / iccid are present.</td>
 </tr>
 </tbody>
-</table>
+</table>  
+
+### TARİH BAZLI DATA KULLANIMI  
+
+<p><strong> Tanımlar </strong></p>
+
+<table>
+<thead>
+<tr>
+<th>Değişken</th>
+<th>Anlamı</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Authorization:Bearer</code></td>
+<td>Yetkilendirme isteği sonucunda alınan token değeri  <em>(Zorunlu parametre)</em></td>
+</tr>
+<tr>
+<td><code>imei</code></td>
+<td>Yetkilendirdiğiniz telefon numarası ile eşleşen Uluslararası Mobil Cihaz Kodu.</td>
+</tr>
+<tr>
+<td><code>iccid</code></td>
+<td>Telefon numarası ile eşleştirilmiş simkart seri numarası.</td>
+</tr>
+<tr>
+<td><code>msisdn</code></td>
+<td>Abonenin tanımlanması ve doğrulanması için operatör tarafından aboneye atanan özel numara.</td>
+</tr>
+<tr>
+<td><code>startDate</code></td>
+<td>Sorgulanacak data kullanımının başlangıç tarihi. DD.MM.YYY formatında olmalıdır. <em>(Zorunlu parametre)</em></td>
+</tr>
+<tr>
+<td><code>endDate</code></td>
+<td>Sorgulanacak data kullanımının bitiş tarihi. DD.MM.YYY formatında olmalıdır. <em>(Zorunlu parametre)</em></td>
+</tr>
+<tr>
+<td><code>page</code></td>
+<td>Sayfa numarası.</td>
+</tr>
+</tbody>
+</table>  
+##### Örnek  
+```
+        use Netgsm\M2m\m2m;
+        $islem=new m2m;
+        $data=array(
+              'tokendegeri'=>'XX',
+              'imei' => 'XX',
+              'iccid' => 'XX',
+              'msisdn'=>'XX',
+              'startDate'=>'01.01.2022',
+              'endDate'=>'30.12.2022',
+              'page'=>1
+        );
+        $sonuc=$islem->tarihbazlidata($data);
+        dd($sonuc);
+        die;
+``` 
+
+#### Başarılı Sorgulama
+
+```
+Array
+(
+    [data] => stdClass Object
+        (
+            [company] => NETGSM İLETİŞİM VE BİLGİ TEKNOLOJİLERİ A.Ş
+            [line_information] => stdClass Object
+                (
+                    [aggreement_date] => 17.06.2022 09:23
+                    [account_type] => Credit and Management Sharing
+                    [imei] => xx
+                    [iccid] => xx
+                    [msisdn] => xx
+                    [imsi] => xx
+                )
+
+            [total_data_usage] => 53
+            [current_page] => 1
+            [total_pages] => 1
+            [total_records] => 1
+            [results] => stdClass Object
+                (
+                    [2022-06-17] => stdClass Object
+                        (
+                            [used_kbytes] => 53
+                            [last_update] => 2022-09-01 09:10:06.400
+                        )
+
+                )
+
+        )
+
+)
+
+
+```
+
+#### Başarısız Sorgulama
+
+```
+Array
+(
+    [status] => 0
+    [reply] => Expired!
+)
+
+```
