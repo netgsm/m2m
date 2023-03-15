@@ -631,4 +631,64 @@ Array
     [reply] => Expired!
 )
 
-```
+```  
+<p><strong> Servisten Dönen Yanıt </strong></p>
+
+<table>
+<thead>
+<tr>
+<th>Parametre</th>
+<th>Anlamı</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>company</code></td>
+<td>Telefon numarasının kayıtlı olduğu kurum adı.</td>
+</tr>
+<tr>
+<td><code>aggreement_date</code></td>
+<td>Sözleşme tarihi.</td>
+</tr>
+<tr>
+<td><code>account_type</code></td>
+<td>Hesap türü.</td>
+</tr>
+<tr>
+<td><code>imei</code></td>
+<td>Telefon numarası ile eşleşen Uluslararası Mobil Cihaz Kodu.</td>
+</tr>
+<tr>
+<td><code>iccid</code></td>
+<td>Telefon numarası ile eşleştirilmiş sim kart seri numarası.</td>
+</tr>
+<tr>
+<td><code>msisdn</code></td>
+<td>Abonenin tanımlanması ve doğrulanması için operatör tarafından aboneye atanan özel numara.</td>
+</tr>
+<tr>
+<td><code>imsi</code></td>
+<td>Bu numara SIM kartın çalıştığı şebeke olan bireysel operatör şebekesini tanımlar. şebeke sağlayıcısı ile SIM kartın iletişim kurabilmesini sağlar.</td>
+</tr>
+<tr>
+<td><code>used_kbytes</code></td>
+<td>Data kullanım miktarı</td>
+</tr>
+<tr>
+<td><code>last_update</code></td>
+<td>Son güncel olma tarihi</td>
+</tr>
+<tr>
+<td><code>service_title</code></td>
+<td>Servis adı.</td>
+</tr>
+<tr>
+<td><code>tariff_title</code></td>
+<td>Tarife adı.</td>
+</tr>
+<tr>
+<td><code>end_date</code></td>
+<td>Tarife bitiş tarihi.</td>
+</tr>
+</tbody>
+</table>
