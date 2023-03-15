@@ -144,8 +144,9 @@ açısından kolaylık sağlar.</li>
 </tr>
 </tbody>
 </table>
-
-```
+##### Örnek 
+```     
+      use Netgsm\M2m\m2m;
       $islem=new m2m;
       $data=array(
             'username'=>'510xxxxxxx',
@@ -255,7 +256,7 @@ Array
 </tbody>
 </table>
 
-
+##### Örnek 
 ```
       use Netgsm\M2m\m2m;
       $islem=new m2m;
@@ -268,7 +269,7 @@ Array
 #### Başarılı Sorgulama
 
 ```
-rray
+Array
 (
     [data] => stdClass Object
         (
