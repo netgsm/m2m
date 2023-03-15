@@ -55,7 +55,7 @@ M2M API servisleri ile kullanabileceğiniz özellikler:
     - [Geliştirici Hesabı](#geli̇şti̇ri̇ci̇-hesabi)
     - [Appkey](#appkey)
     - [Yetkilendirme](#yetki̇lendi̇rme)
-    - [Hat Listesi](#hat-listesi)
+    - [Hat Listesi](#hat-li̇stesi̇)
 
 # İletişim & Destek
 
@@ -249,8 +249,8 @@ Array
 </tr>
 <tr>
 <td>400 Bad Request</td>
-<td>status <hr> reply</td>
-<td>0 <hr> Expired!</td>
+<td>status  reply</td>
+<td>0  Expired!</td>
 </tr>
 </tbody>
 </table>
