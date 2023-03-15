@@ -146,7 +146,7 @@ açısından kolaylık sağlar.</li>
 </tbody>
 </table>  
 
-###### Örnek  
+##### Örnek  
 ```     
       use Netgsm\M2m\m2m;
       $islem=new m2m;
@@ -200,7 +200,9 @@ Array
 </tr>
 </tbody>
 </table>  
-###### Örnek  
+
+##### Örnek  
+
 ```
       use Netgsm\M2m\m2m;
       $islem=new m2m;
@@ -360,7 +362,7 @@ Array
 </tbody>
 </table>  
 
-###### Örnek  
+##### Örnek  
 ```
       use Netgsm\M2m\m2m;
       $islem=new m2m;
