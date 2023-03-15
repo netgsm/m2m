@@ -243,12 +243,12 @@ Array
 </thead>
 <tbody>
 <tr>
-<td><code>301 Moved Permanently</code></td>
+<td>301 Moved Permanently</td>
 <td>message</td>
 <td>Couldn't find any record(s)</td>
 </tr>
 <tr>
-<td><code>400 Bad Request</code></td>
+<td>400 Bad Request</td>
 <td>status <hr> reply</td>
 <td>0 <hr> Expired!</td>
 </tr>
