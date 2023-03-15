@@ -52,7 +52,7 @@ M2M API servisleri ile kullanabileceğiniz özellikler:
 - [Supported](#supported)
 - [Kurulum](#Kurulum)
 - [Doküman](#doküman)
-    - [Geliştirici Hesabı](#geliştirici-hesabı)
+    - [Geliştirici Hesabı](#geli̇şti̇ri̇ci̇-hesabi)
     - [Appkey](#appkey)
 
 # İletişim & Destek
@@ -101,6 +101,16 @@ PHP 7.2.5 ve üzeri
 <li>Geliştirme ve güncellemelerden anlık haberdar olmanız
 sağlanır.</li>
 </ul> 
+
+### APPKEY
+
+<p>Entegrasyonlarınızın yayınlanması ve gönderimlerinizde appkey parametresi göndermeniz;</p>
+<ul>
+<li>Arızalarda doğrudan irtibata geçilmesi</li>
+<li>Yazılım kaynaklı problem tespit edildiğinde tarafınıza bilgi verilmesi</li>
+<li>Gönderim istatistik ve raporlarınız
+açısından kolaylık sağlar.</li>
+</ul>
 
 ```
         use Netgsm\Account\account;
