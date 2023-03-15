@@ -56,7 +56,7 @@ M2M API servisleri ile kullanabileceğiniz özellikler:
     - [Appkey](#appkey)
     - [Yetkilendirme](#yetki̇lendi̇rme)
     - [Hat Listesi](#hat-li̇stesi̇)
-    - [Hat Detayı](#hat-detayı̇)
+    - [Hat Detayı](#hat-detayı)
 
 # İletişim & Destek
 
@@ -440,7 +440,7 @@ Array
 <tr>
 <td><code>422 Unprocessable Entity</code></td>
 <td>message imei iccidphone_number</td>
-<td>The given data was invalid.The imei field is required when none of iccid / phone number are present.The iccid field is required when none of imei / phone number are present.The phone number field is required when none of imei / iccid are present.</td>
+<td>The given data was invalid.The imei field is required when none of iccid / phone number are present.<br>The iccid field is required when none of imei / phone number are present.The phone number field is required when none of imei / iccid are present.</td>
 </tr>
 </tbody>
 </table>
