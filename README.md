@@ -644,7 +644,7 @@ Array
 <tbody>
 <tr>
 <td><code>company</code></td>
-<td>Telefon numarasının kayıtlı olduğu kurum adı.</td>
+<td>Telefon numarasının kayıtlı olduğu kurum adı</td>
 </tr>
 <tr>
 <td><code>aggreement_date</code></td>
@@ -656,11 +656,11 @@ Array
 </tr>
 <tr>
 <td><code>imei</code></td>
-<td>Telefon numarası ile eşleşen Uluslararası Mobil Cihaz Kodu.</td>
+<td>Yetkilendirdiğiniz telefon numarası ile eşleşen Uluslararası Mobil Cihaz Kodu.</td>
 </tr>
 <tr>
 <td><code>iccid</code></td>
-<td>Telefon numarası ile eşleştirilmiş sim kart seri numarası.</td>
+<td>Telefon numarası ile eşleştirilmiş simkart seri numarası.</td>
 </tr>
 <tr>
 <td><code>msisdn</code></td>
@@ -671,6 +671,22 @@ Array
 <td>Bu numara SIM kartın çalıştığı şebeke olan bireysel operatör şebekesini tanımlar. şebeke sağlayıcısı ile SIM kartın iletişim kurabilmesini sağlar.</td>
 </tr>
 <tr>
+<td><code>total_data_usage</code></td>
+<td>Toplam data kullanım miktarı</td>
+</tr>
+<tr>
+<td><code>current_page</code></td>
+<td>Güncel sayfa</td>
+</tr>
+<tr>
+<td><code>total_pages</code></td>
+<td>Toplam sayfa sayısı</td>
+</tr>
+<tr>
+<td><code>total_records</code></td>
+<td>Toplam kayıt sayısı</td>
+</tr>
+<tr>
 <td><code>used_kbytes</code></td>
 <td>Data kullanım miktarı</td>
 </tr>
@@ -678,17 +694,39 @@ Array
 <td><code>last_update</code></td>
 <td>Son güncel olma tarihi</td>
 </tr>
+</tbody>
+</table>
+
+<p><strong> Hata Durumları </strong></p>  
+
+<table>
+<thead>
 <tr>
-<td><code>service_title</code></td>
-<td>Servis adı.</td>
+<th>HTTP status</th>
+<th>Parametre</th>
+<th>Hata mesajı</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>301 Moved Permanently</code></td>
+<td>message</td>
+<td>Couldn't find any record(s)</td>
 </tr>
 <tr>
-<td><code>tariff_title</code></td>
-<td>Tarife adı.</td>
+<td><code>400 Bad Request</code></td>
+<td>message</td>
+<td>status <hr> reply</td>
 </tr>
 <tr>
-<td><code>end_date</code></td>
-<td>Tarife bitiş tarihi.</td>
+<td><code>401 Unauthorized</code></td>
+<td>message</td>
+<td>Unauthorized.</td>
+</tr>
+<tr>
+<td><code>422 Unprocessable Entity</code></td>
+<td>message<hr>imei<hr>phone_number</td>
+<td>The given data was invalid.<hr> The phone number field is required.<hr>The phone number field is required.</td>
 </tr>
 </tbody>
 </table>
