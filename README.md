@@ -45,17 +45,20 @@ M2M API servisleri ile kullanabileceğiniz özellikler:
 </li>
 </ul>
 
+
+## İçindekiler
+
+- [İletişim & Destek](#i̇letişim--destek)
+- [Supported](#supported)
+- [Kurulum](#Kurulum)
+- [Doküman](#doküman)
+    - [Geliştirici Hesabı](#geliştirici-hesabı)
+    - [Appkey](#appkey)
+
 # İletişim & Destek
 
  Netgsm API Servisi ile alakalı tüm sorularınızı ve önerilerinizi teknikdestek@netgsm.com.tr adresine iletebilirsiniz.
-
-
-# Doküman 
-
- API Servisi için hazırlanmış kapsamlı dokümana ve farklı yazılım dillerinde örnek amaçlı hazırlanmış örnek kodlamalara 
- [https://www.netgsm.com.tr/m2mapi/#m2m-api](https://www.netgsm.com.tr/m2mapi/#m2m-api) adresinden ulaşabilirsiniz.
-
-
+ 
 ## Supported
 ### Supported Laravel Versions
 
@@ -76,11 +79,28 @@ PHP 7.2.5 ve üzeri
 
 <b>composer require netgsm/m2m</b>
 
+
+# Doküman 
+
+ API Servisi için hazırlanmış kapsamlı dokümana ve farklı yazılım dillerinde örnek amaçlı hazırlanmış örnek kodlamalara 
+ [https://www.netgsm.com.tr/m2mapi/#m2m-api](https://www.netgsm.com.tr/m2mapi/#m2m-api) adresinden ulaşabilirsiniz.
+
+
+
  
 
-### KREDİ SORGULAMA
+### GELİŞTİRİCİ HESABI
 
-Aboneliğinizde bulunan Kredi bilgilerine bu servisten ulaşabilirsiniz.  
+<p>Netgsm hizmetlerini yazılımlarına entegre eden geliştiricileri  Netgsm Geliştirici Hesabı ile geliştirici ekosistemine dahil ediyoruz,  <a href="https://www.netgsm.com.tr/gelistiriciler/">https://www.netgsm.com.tr/gelistiriciler/</a> adresinden bir geliştirici hesabı oluşturabilirsiniz.</p>
+<p>Sistemde aktivasyonunuz onaylandıktan sonra, portal üzerinden <a href="https://www.netgsm.com.tr">https://www.netgsm.com.tr</a> <strong> Geliştirici </strong> sekmesinden uygulamalarınızı kaydedebilirsiniz.</p>
+<p>Geliştirici hesabınıza eklediğiniz Uygulanmanızın onaylandıktan sonra Netgsm Entegrasyon Listesinde yayınlanır ve göndereceğiniz SMS methoduna göre bize appkey parametresinde uygulama kodunuzu iletebilirsiniz.</p>
+<p>Geliştirici hesabı ile;</p>
+<ul>
+<li>Uygulamalarınıza ya da senaryonuza en uygun hizmeti size sunmak</li>
+<li>Uygulamanız özelinde taleplerin, geliştirmelerin alınması için teknik ekip ile görüşmelerinizin yapılabilir olması</li>
+<li>Geliştirme ve güncellemelerden anlık haberdar olmanız
+sağlanır.</li>
+</ul> 
 
 ```
         use Netgsm\Account\account;
