@@ -180,7 +180,7 @@ Array
 
 ### HAT LİSTESİ
 
-<div class="space-bottom8 col7 pad2x prose clip"><h3 id="hat-listesi">Hat listesi</h3>
+
 <p>Yetkilendirdiğiniz aboneliğinize bağlı hat listesine ve detaylarına (imei,iccid vs.) ulaşabilirsiniz.</p>
 <p><strong> Tanımlar </strong></p>
 <table>
@@ -254,7 +254,7 @@ Array
 </tr>
 </tbody>
 </table>
-</div>
+
 
 ```
         use Netgsm\Account\account;
