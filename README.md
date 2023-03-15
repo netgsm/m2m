@@ -144,8 +144,9 @@ açısından kolaylık sağlar.</li>
 <td>Geliştirici hesabınızdan yayınlanan uygulamanıza ait id bilgisi. <em>(Zorunlu parametre.)</em></td>
 </tr>
 </tbody>
-</table>
+</table>  
 
+###### Örnek  
 ```     
       use Netgsm\M2m\m2m;
       $islem=new m2m;
