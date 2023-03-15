@@ -198,7 +198,8 @@ Array
 <td>Yetkilendirme isteği sonucunda alınan token değeri  <em>(Zorunlu parametre)</em></td>
 </tr>
 </tbody>
-</table>
+</table>  
+
 ```
       use Netgsm\M2m\m2m;
       $islem=new m2m;
