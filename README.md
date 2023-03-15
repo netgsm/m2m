@@ -199,65 +199,6 @@ Array
 </tr>
 </tbody>
 </table>
-<p><strong> Servisten Dönen Yanıt </strong></p>
-<table>
-<thead>
-<tr>
-<th>Parametre</th>
-<th>Anlamı</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>company</code></td>
-<td>Telefon numarasının kayıtlı olduğu kurum adı</td>
-</tr>
-<tr>
-<td><code>imei</code></td>
-<td>Yetkilendirdiğiniz telefon numarası ile eşleşen Uluslararası Mobil Cihaz Kodu.</td>
-</tr>
-<tr>
-<td><code>iccid</code></td>
-<td>Telefon numarası ile eşleştirilmiş simkart seri numarası.</td>
-</tr>
-<tr>
-<td><code>msisdn</code></td>
-<td>Abonenin tanımlanması ve doğrulanması için operatör tarafından aboneye atanan özel numara.</td>
-</tr>
-<tr>
-<td><code>account_type</code></td>
-<td>Hesap türü.</td>
-</tr>
-<tr>
-<td><code>imsi</code></td>
-<td>Bu numara SIM kartın çalıştığı şebeke olan bireysel operatör şebekesini tanımlar. şebeke sağlayıcısı ile SIM kartın iletişim kurabilmesini sağlar.</td>
-</tr>
-</tbody>
-</table>
-<p><strong> Hata Durumları </strong></p>
-<table>
-<thead>
-<tr>
-<th>HTTP status</th>
-<th>Parametre</th>
-<th>Hata mesajı</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>301 Moved Permanently</td>
-<td>message</td>
-<td>Couldn't find any record(s)</td>
-</tr>
-<tr>
-<td>400 Bad Request</td>
-<td>status  reply</td>
-<td>0  Expired!</td>
-</tr>
-</tbody>
-</table>
-
-
 ```
       use Netgsm\M2m\m2m;
       $islem=new m2m;
@@ -328,6 +269,66 @@ Array
 )
 
 ```
+<p><strong> Servisten Dönen Yanıt </strong></p>
+<table>
+<thead>
+<tr>
+<th>Parametre</th>
+<th>Anlamı</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>company</code></td>
+<td>Telefon numarasının kayıtlı olduğu kurum adı</td>
+</tr>
+<tr>
+<td><code>imei</code></td>
+<td>Yetkilendirdiğiniz telefon numarası ile eşleşen Uluslararası Mobil Cihaz Kodu.</td>
+</tr>
+<tr>
+<td><code>iccid</code></td>
+<td>Telefon numarası ile eşleştirilmiş simkart seri numarası.</td>
+</tr>
+<tr>
+<td><code>msisdn</code></td>
+<td>Abonenin tanımlanması ve doğrulanması için operatör tarafından aboneye atanan özel numara.</td>
+</tr>
+<tr>
+<td><code>account_type</code></td>
+<td>Hesap türü.</td>
+</tr>
+<tr>
+<td><code>imsi</code></td>
+<td>Bu numara SIM kartın çalıştığı şebeke olan bireysel operatör şebekesini tanımlar. şebeke sağlayıcısı ile SIM kartın iletişim kurabilmesini sağlar.</td>
+</tr>
+</tbody>
+</table>
+<p><strong> Hata Durumları </strong></p>
+<table>
+<thead>
+<tr>
+<th>HTTP status</th>
+<th>Parametre</th>
+<th>Hata mesajı</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>301 Moved Permanently</td>
+<td>message</td>
+<td>Couldn't find any record(s)</td>
+</tr>
+<tr>
+<td>400 Bad Request</td>
+<td>status  reply</td>
+<td>0  Expired!</td>
+</tr>
+</tbody>
+</table>
+
+
+
 ### HAT DETAYI
 <p><strong> Tanımlar </strong></p>
 <table>
