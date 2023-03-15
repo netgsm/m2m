@@ -56,9 +56,17 @@ M2M API servisleri ile kullanabileceğiniz özellikler:
  [https://www.netgsm.com.tr/m2mapi/#m2m-api](https://www.netgsm.com.tr/m2mapi/#m2m-api) adresinden ulaşabilirsiniz.
 
 
+## Supported
 ### Supported Laravel Versions
 
-Laravel 6.x, Laravel 7.x, Laravel 8.x, Laravel 9.x, 
+Laravel 6.x, Laravel 7.x, Laravel 8.x, Laravel 9.x, Laravel 10.x, 
+### Supported Lumen Versions
+
+Lumen 6.x, Lumen 7.x, Lumen 8.x, Lumen 9.x, 
+
+### Supported Symfony Versions
+
+Symfony 4.x, Symfony 5.x, Symfony 6.x
 
 ### Supported Php Versions
 
@@ -66,13 +74,9 @@ PHP 7.2.5 ve üzeri
 
 ### Kurulum
 
-<b>composer require netgsm/account</b>
+<b>composer require netgsm/m2m</b>
 
-.env  dosyası içerisinde NETGSM ABONELİK bilgileriniz tanımlanması zorunludur.  
-
-<b>NETGSM_USERCODE=""</b>  
-<b>NETGSM_PASSWORD=""</b>  
-<b>NETGSM_HEADER=""</b>  
+ 
 
 ### KREDİ SORGULAMA
 
