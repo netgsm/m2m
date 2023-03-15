@@ -725,8 +725,8 @@ Array
 </tr>
 <tr>
 <td><code>422 Unprocessable Entity</code></td>
-<td>messageimei<br>phone_number</td>
-<td>The given data was invalid.<br> The phone number field is required.<hr>The phone number field is required.</td>
+<td>message<br>imei<br>phone_number</td>
+<td>The given data was invalid.<br> The phone number field is required.<br>The phone number field is required.</td>
 </tr>
 </tbody>
 </table>
