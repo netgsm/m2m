@@ -257,19 +257,61 @@ Array
 
 
 ```
-        use Netgsm\Account\account;
-	$kredi=new account;
-     	$sonuc=$kredi->paketsorgu();
-       	dd($sonuc);
-        die;
+      use Netgsm\M2m\m2m;
+      $islem=new m2m;
+      $token='token degeri';
+      $sonuc=$islem->hatlistesi($token);
+      dd($sonuc);
+      die;
 ``` 
 
 #### Başarılı Sorgulama
 
 ```
-Array
+rray
 (
-    [0] => 215 | Adet | Sms Hizmeti - Giden
+    [data] => stdClass Object
+        (
+            [company] => NETGSM İLETİŞİM VE BİLGİ TEKNOLOJİLERİ A.Ş
+            [main_account] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [imei] => 
+                            [iccid] => xx
+                            [msisdn] => xx
+                            [imsi] => xx
+                        )
+
+                )
+
+            [sub_accounts] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [imei] => 
+                            [iccid] => xx
+                            [msisdn] => xx
+                            [imsi] => xx
+                            [account_type] => Credit and Management Sharing
+                        )
+
+                    [1] => stdClass Object
+                        (
+                            [imei] => 
+                            [iccid] => xx
+                            [msisdn] => xx
+                            [imsi] => xx
+                            [account_type] => Credit and Management Sharing
+                        )
+
+
+                    
+
+                )
+
+        )
+
 )
 
 ```
@@ -279,11 +321,8 @@ Array
 ```
 Array
 (
-   [durum] => Geçersiz kullanıcı adı , şifre veya kullanıcınızın API erişim izninin olmadığını gösterir.  
-   Ayrıca eğer API erişiminizde IP sınırlaması yaptıysanız ve sınırladığınız ip dışında gönderim sağlıyorsanız 30 hata kodunu  
-   alırsınız.API erişim izninizi veya IP sınırlamanızı , web arayüzümüzden;  sağ üst köşede bulunan ayarlar> API işlemleri   
-   menüsunden kontrol edebilirsiniz.
-   [code] => 30
+    [status] => 0
+    [reply] => Expired!
 )
 
 ```
