@@ -51,7 +51,7 @@ M2M API servisleri ile kullanabileceğiniz özellikler:
 
 
 # Doküman 
-https://www.netgsm.com.tr/m2mapi/#m2m-api
+
  API Servisi için hazırlanmış kapsamlı dokümana ve farklı yazılım dillerinde örnek amaçlı hazırlanmış örnek kodlamalara 
  [https://www.netgsm.com.tr/m2mapi/#m2m-api](https://www.netgsm.com.tr/m2mapi/#m2m-api) adresinden ulaşabilirsiniz.
 
