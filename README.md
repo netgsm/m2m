@@ -54,6 +54,7 @@ M2M API servisleri ile kullanabileceğiniz özellikler:
 - [Doküman](#doküman)
     - [Geliştirici Hesabı](#geli̇şti̇ri̇ci̇-hesabi)
     - [Appkey](#appkey)
+    - [Yetkilendirme](#yetkilendirme)
 
 # İletişim & Destek
 
@@ -144,20 +145,25 @@ açısından kolaylık sağlar.</li>
 </table>
 
 ```
-        use Netgsm\Account\account;
-	$kredi=new account;
-       	$sonuc=$kredi->kredisorgu();
-      	dd($sonuc);
-        die;
+      $islem=new m2m;
+      $data=array(
+            'username'=>'510xxxxxxx',
+            'password' => 'xxxxxx',
+            'appKey' => 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
+
+      );
+      $sonuc=$islem->yetkilendirme($data);
+      dd($sonuc);
+      die;
 ``` 
 #### Başarılı Sorgulama
 
 ```
 Array
+Array
 (
-    [durum] => Başarılı sorgulama
-    [cüzdan] => 34,020
-    [code] => 00
+    [token] => 'token'
+    [exp] => 1681455059
 )
 
 ```
@@ -166,11 +172,7 @@ Array
 ```
 Array
 (
-   [durum] => Geçersiz kullanıcı adı , şifre veya kullanıcınızın API erişim izninin olmadığını gösterir.  
-   Ayrıca eğer API erişiminizde IP sınırlaması yaptıysanız ve sınırladığınız ip dışında gönderim sağlıyorsanız 30 hata kodunu  
-   alırsınız.API erişim izninizi veya IP sınırlamanızı , web arayüzümüzden;  sağ üst köşede bulunan ayarlar> API işlemleri   
-   menüsunden kontrol edebilirsiniz.
-   [code] => 30
+    [message] => An error occurred in the login service
 )
 
 ```
