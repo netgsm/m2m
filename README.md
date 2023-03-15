@@ -357,6 +357,75 @@ Array
 </tbody>
 </table>
 
+
+```
+      use Netgsm\M2m\m2m;
+      $islem=new m2m;
+        $data=array(
+              'tokendegeri'=>xx',
+              'imei' => 'xx',
+              'iccid' => 'xx',
+              'msisdn'=>'xx'
+  
+        );
+        $sonuc=$islem->hatdetay($data);
+        dd($sonuc);
+        die;
+``` 
+
+#### Başarılı Sorgulama
+
+```
+Array
+(
+    [data] => stdClass Object
+        (
+            [company] => NETGSM İLETİŞİM VE BİLGİ TEKNOLOJİLERİ A.Ş
+            [line_information] => stdClass Object
+                (
+                    [aggreement_date] => 17.06.2022 09:23
+                    [account_type] => Credit and Management Sharing
+                    [imei] => xx
+                    [iccid] => xx
+                    [msisdn] => xx
+                    [imsi] => xx
+                )
+
+            [usage_information] => stdClass Object
+                (
+                    [used_kbytes] => xx
+                    [last_update] => 15.03.2023 10:38
+                )
+
+            [commitment_detail] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [service_title] => M2M Data
+                            [tariff_title] => 250 MB M2M Data
+                            [end_date] => 17.06.2023 00:00
+                        )
+
+                )
+
+        )
+
+)
+a
+
+```
+
+#### Başarısız Sorgulama
+
+```
+Array
+(
+    [status] => 0
+    [reply] => Expired!
+)
+
+```
+
 <p><strong> Servisten Dönen Yanıt</strong></p>
 <table>
 <thead>
