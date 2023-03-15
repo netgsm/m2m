@@ -159,7 +159,7 @@ açısından kolaylık sağlar.</li>
 #### Başarılı Sorgulama
 
 ```
-Array
+
 Array
 (
     [token] => 'token'
