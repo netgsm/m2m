@@ -429,8 +429,8 @@ Array
 <tbody>
 <tr>
 <td><code>400 Bad Request</code></td>
-<td>status <hr> reply</td>
-<td>0 <hr> Expired!</td>
+<td>status  reply</td>
+<td>0  Expired!</td>
 </tr>
 <tr>
 <td><code>404 Not Found</code></td>
@@ -439,8 +439,8 @@ Array
 </tr>
 <tr>
 <td><code>422 Unprocessable Entity</code></td>
-<td>message<hr>imei<hr>iccid<hr>phone_number</td>
-<td>The given data was invalid.<hr>The imei field is required when none of iccid / phone number are present.<hr>The iccid field is required when none of imei / phone number are present.<hr>The phone number field is required when none of imei / iccid are present.</td>
+<td>message imei iccidphone_number</td>
+<td>The given data was invalid.<hr>The imei field is required when none of iccid / phone number are present.<hr>The iccid field is required when none of imei / phone number are present.The phone number field is required when none of imei / iccid are present.</td>
 </tr>
 </tbody>
 </table>
