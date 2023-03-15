@@ -56,6 +56,7 @@ M2M API servisleri ile kullanabileceğiniz özellikler:
     - [Appkey](#appkey)
     - [Yetkilendirme](#yetki̇lendi̇rme)
     - [Hat Listesi](#hat-li̇stesi̇)
+    - [Hat Detayı](#hat-detayı̇)
 
 # İletişim & Destek
 
@@ -327,4 +328,119 @@ Array
 )
 
 ```
+### HAT DETAYI
+<p><strong> Tanımlar </strong></p>
+<table>
+<thead>
+<tr>
+<th>Değişken</th>
+<th>Anlamı</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Authorization:Bearer</code></td>
+<td>Yetkilendirme isteği sonucunda alınan token değeri  <em>(Zorunlu parametre)</em></td>
+</tr>
+<tr>
+<td><code>imei</code></td>
+<td>Yetkilendirdiğiniz telefon numarası ile eşleşen Uluslararası Mobil Cihaz Kodu.</td>
+</tr>
+<tr>
+<td><code>iccid</code></td>
+<td>Telefon numarası ile eşleştirilmiş simkart seri numarası.</td>
+</tr>
+<tr>
+<td><code>msisdn</code></td>
+<td>Abonenin tanımlanması ve doğrulanması için operatör tarafından aboneye atanan özel numara.</td>
+</tr>
+</tbody>
+</table>
 
+<p><strong> Servisten Dönen Yanıt</strong></p>
+<table>
+<thead>
+<tr>
+<th>Parametre</th>
+<th>Anlamı</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>company</code></td>
+<td>Telefon numarasının kayıtlı olduğu kurum adı.</td>
+</tr>
+<tr>
+<td><code>aggreement_date</code></td>
+<td>Sözleşme tarihi.</td>
+</tr>
+<tr>
+<td><code>account_type</code></td>
+<td>Hesap türü.</td>
+</tr>
+<tr>
+<td><code>imei</code></td>
+<td>Telefon numarası ile eşleşen Uluslararası Mobil Cihaz Kodu.</td>
+</tr>
+<tr>
+<td><code>iccid</code></td>
+<td>Telefon numarası ile eşleştirilmiş sim kart seri numarası.</td>
+</tr>
+<tr>
+<td><code>msisdn</code></td>
+<td>Abonenin tanımlanması ve doğrulanması için operatör tarafından aboneye atanan özel numara.</td>
+</tr>
+<tr>
+<td><code>imsi</code></td>
+<td>Bu numara SIM kartın çalıştığı şebeke olan bireysel operatör şebekesini tanımlar. şebeke sağlayıcısı ile SIM kartın iletişim kurabilmesini sağlar.</td>
+</tr>
+<tr>
+<td><code>used_kbytes</code></td>
+<td>Data kullanım miktarı</td>
+</tr>
+<tr>
+<td><code>last_update</code></td>
+<td>Son güncel olma tarihi</td>
+</tr>
+<tr>
+<td><code>service_title</code></td>
+<td>Servis adı.</td>
+</tr>
+<tr>
+<td><code>tariff_title</code></td>
+<td>Tarife adı.</td>
+</tr>
+<tr>
+<td><code>end_date</code></td>
+<td>Tarife bitiş tarihi.</td>
+</tr>
+</tbody>
+</table>
+<p><strong> Hata Durumları </strong></p>
+
+<table>
+<thead>
+<tr>
+<th>HTTP status</th>
+<th>Parametre</th>
+<th>Hata mesajı</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>400 Bad Request</code></td>
+<td>status <hr> reply</td>
+<td>0 <hr> Expired!</td>
+</tr>
+<tr>
+<td><code>404 Not Found</code></td>
+<td>message</td>
+<td>Couldn't find any record(s)!</td>
+</tr>
+<tr>
+<td><code>422 Unprocessable Entity</code></td>
+<td>message<hr>imei<hr>iccid<hr>phone_number</td>
+<td>The given data was invalid.<hr>The imei field is required when none of iccid / phone number are present.<hr>The iccid field is required when none of imei / phone number are present.<hr>The phone number field is required when none of imei / iccid are present.</td>
+</tr>
+</tbody>
+</table>
