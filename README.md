@@ -729,4 +729,90 @@ Array
 <td>The given data was invalid.<br> The phone number field is required.<br>The phone number field is required.</td>
 </tr>
 </tbody>
-</table>
+</table>  
+
+### IMEI DEĞİŞİM GEÇMİŞİ  
+
+<p><strong> Tanımlar </strong></p>  
+
+<table>
+<thead>
+<tr>
+<th>Değişken</th>
+<th>Anlamı</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Authorization:Bearer</code></td>
+<td>Yetkilendirme isteği sonucunda alınan token değeri  <em>(Zorunlu parametre)</em></td>
+</tr>
+<tr>
+<td><code>msisdn</code></td>
+<td>Abonenin tanımlanması ve doğrulanması için operatör tarafından aboneye atanan özel numara.</td>
+</tr>
+</tbody>
+</table>  
+
+##### Örnek  
+
+```
+        use Netgsm\M2m\m2m;
+        $islem=new m2m;
+        $data=array(
+              'tokendegeri'=>'XXX',
+              'msisdn'=>'XX',          
+        );
+        $sonuc=$islem->imeigecmis($data);
+        dd($sonuc);
+        die;
+``` 
+
+#### Başarılı Sorgulama
+
+```
+Array
+(
+    [data] => stdClass Object
+        (
+            [results] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [imei] => XX
+                            [date] => 26.07.2022 14:33
+                            [msisdn] => XX
+                            [iccid] => XX
+                            [imsi] => XX
+                        )
+
+                    [1] => stdClass Object
+                        (
+                            [imei] => XX
+                            [date] => 17.06.2022 07:01
+                            [msisdn] => XX
+                            [iccid] => XX
+                            [imsi] => XX
+                        )
+
+                )
+
+        )
+
+)
+
+
+```
+
+#### Başarısız Sorgulama
+
+```
+Array
+(
+    [status] => 0
+    [reply] => Expired!
+)
+
+```  
+
+
