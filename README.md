@@ -178,9 +178,83 @@ Array
 
 ```
 
-### PAKET SORGULAMA
+### HAT LİSTESİ
 
-Aboneliğinizde bulunan Paket - Kampanya bilgilerine bu servisten ulaşabilirsiniz.  
+<div class="space-bottom8 col7 pad2x prose clip"><h3 id="hat-listesi">Hat listesi</h3>
+<p>Yetkilendirdiğiniz aboneliğinize bağlı hat listesine ve detaylarına (imei,iccid vs.) ulaşabilirsiniz.</p>
+<p><strong> Tanımlar </strong></p>
+<table>
+<thead>
+<tr>
+<th>Değişken</th>
+<th>Anlamı</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Authorization:Bearer</code></td>
+<td>Yetkilendirme isteği sonucunda alınan token değeri  <em>(Zorunlu parametre)</em></td>
+</tr>
+</tbody>
+</table>
+<p><strong> Servisten Dönen Yanıt </strong></p>
+<table>
+<thead>
+<tr>
+<th>Parametre</th>
+<th>Anlamı</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>company</code></td>
+<td>Telefon numarasının kayıtlı olduğu kurum adı</td>
+</tr>
+<tr>
+<td><code>imei</code></td>
+<td>Yetkilendirdiğiniz telefon numarası ile eşleşen Uluslararası Mobil Cihaz Kodu.</td>
+</tr>
+<tr>
+<td><code>iccid</code></td>
+<td>Telefon numarası ile eşleştirilmiş simkart seri numarası.</td>
+</tr>
+<tr>
+<td><code>msisdn</code></td>
+<td>Abonenin tanımlanması ve doğrulanması için operatör tarafından aboneye atanan özel numara.</td>
+</tr>
+<tr>
+<td><code>account_type</code></td>
+<td>Hesap türü.</td>
+</tr>
+<tr>
+<td><code>imsi</code></td>
+<td>Bu numara SIM kartın çalıştığı şebeke olan bireysel operatör şebekesini tanımlar. şebeke sağlayıcısı ile SIM kartın iletişim kurabilmesini sağlar.</td>
+</tr>
+</tbody>
+</table>
+<p><strong> Hata Durumları </strong></p>
+<table>
+<thead>
+<tr>
+<th>HTTP status</th>
+<th>Parametre</th>
+<th>Hata mesajı</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>301 Moved Permanently</code></td>
+<td>message</td>
+<td>Couldn't find any record(s)</td>
+</tr>
+<tr>
+<td><code>400 Bad Request</code></td>
+<td>status <hr> reply</td>
+<td>0 <hr> Expired!</td>
+</tr>
+</tbody>
+</table>
+</div>
 
 ```
         use Netgsm\Account\account;
