@@ -55,6 +55,7 @@ M2M API servisleri ile kullanabileceğiniz özellikler:
     - [Geliştirici Hesabı](#geli̇şti̇ri̇ci̇-hesabi)
     - [Appkey](#appkey)
     - [Yetkilendirme](#yetki̇lendi̇rme)
+    - [Hat Listesi](#hat-listesi)
 
 # İletişim & Destek
 
