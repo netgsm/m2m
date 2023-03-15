@@ -200,7 +200,7 @@ Array
 </tr>
 </tbody>
 </table>  
-
+###### Örnek  
 ```
       use Netgsm\M2m\m2m;
       $islem=new m2m;
@@ -358,9 +358,9 @@ Array
 <td>Abonenin tanımlanması ve doğrulanması için operatör tarafından aboneye atanan özel numara.</td>
 </tr>
 </tbody>
-</table>
+</table>  
 
-
+###### Örnek  
 ```
       use Netgsm\M2m\m2m;
       $islem=new m2m;
