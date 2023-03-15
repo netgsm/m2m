@@ -716,7 +716,7 @@ Array
 <tr>
 <td><code>400 Bad Request</code></td>
 <td>message</td>
-<td>status <hr> reply</td>
+<td>status reply</td>
 </tr>
 <tr>
 <td><code>401 Unauthorized</code></td>
@@ -725,8 +725,8 @@ Array
 </tr>
 <tr>
 <td><code>422 Unprocessable Entity</code></td>
-<td>message<hr>imei<hr>phone_number</td>
-<td>The given data was invalid.<hr> The phone number field is required.<hr>The phone number field is required.</td>
+<td>messageimei<br>phone_number</td>
+<td>The given data was invalid.<br> The phone number field is required.<hr>The phone number field is required.</td>
 </tr>
 </tbody>
 </table>
