@@ -58,7 +58,7 @@ M2M API servisleri ile kullanabileceğiniz özellikler:
     - [Hat Listesi](#hat-li̇stesi̇)
     - [Hat Detayı](#hat-detayi)
     - [Tarih Bazlı Data Kullanımı](#tari̇h-bazli-data-kullanimi)
-    - [IMEI değişim geçmişi](#hat-detayi)
+    - [IMEI değişim geçmişi](#imei-deği̇şi̇m-geçmi̇şi̇)
 
 # İletişim & Destek
 
@@ -814,5 +814,62 @@ Array
 )
 
 ```  
+
+<p><strong> Servisten Dönen Yanıt </strong></p>  
+
+<table>
+<thead>
+<tr>
+<th>Parametre</th>
+<th>Anlamı</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>imei</code></td>
+<td>Telefon numarası ile eşleşen Uluslararası Mobil Cihaz Kodu.</td>
+</tr>
+<tr>
+<td><code>date</code></td>
+<td>Imei değişim tarihi</td>
+</tr>
+<tr>
+<td><code>msisdn</code></td>
+<td>Abonenin tanımlanması ve doğrulanması için operatör tarafından aboneye atanan özel numara.</td>
+</tr>
+<tr>
+<td><code>iccid</code></td>
+<td>Telefon numarası ile eşleştirilmiş simkart seri numarası.</td>
+</tr>
+<tr>
+<td><code>imsi</code></td>
+<td>Bu numara SIM kartın çalıştığı şebeke olan bireysel operatör şebekesini tanımlar. şebeke sağlayıcısı ile SIM kartın iletişim kurabilmesini sağlar.</td>
+</tr>
+</tbody>
+</table>  
+
+<p><strong> Hata Durumları </strong></p>  
+
+<table>
+<thead>
+<tr>
+<th>HTTP status</th>
+<th>Parametre</th>
+<th>Hata mesajı</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>301 Moved Permanentlyt</code></td>
+<td>message</td>
+<td>Couldn't find any record(s)</td>
+</tr>
+<tr>
+<td><code>400 Bad Request</code></td>
+<td>status <br> reply</td>
+<td>0 <br> Expired!</td>
+</tr>
+</tbody>
+</table>
 
 
